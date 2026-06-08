@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Management Dashboard</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+<div class="sidebar">
+    <h2>🎓 EduAdmin</h2>
+
+    <ul>
+        <li><i class="fas fa-home"></i> Dashboard</li>
+        <li><i class="fas fa-user-graduate"></i> Students</li>
+        <li><i class="fas fa-book"></i> Courses</li>
+        <li><i class="fas fa-chart-line"></i> Reports</li>
+        <li><i class="fas fa-cog"></i> Settings</li>
+    </ul>
+</div>
+
+<div class="main">
+
+    <div class="header">
+        <h1>Student Management Dashboard</h1>
+        <button onclick="showMessage()">Add Student</button>
+    </div>
+
+    <div class="cards">
+
+        <div class="card">
+            <i class="fas fa-users"></i>
+            <h2 id="students">0</h2>
+            <p>Total Students</p>
+        </div>
+
+        <div class="card">
+            <i class="fas fa-user-check"></i>
+            <h2 id="active">0</h2>
+            <p>Active Students</p>
+        </div>
+
+        <div class="card">
+            <i class="fas fa-book-open"></i>
+            <h2 id="courses">0</h2>
+            <p>Courses</p>
+        </div>
+
+        <div class="card">
+            <i class="fas fa-award"></i>
+            <h2 id="topper">0</h2>
+            <p>Top Performers</p>
+        </div>
+
+    </div>
+
+    <div class="table-box">
+        <h2>Student Records</h2>
+
+        <table>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Course</th>
+                <th>Grade</th>
+            </tr>
+
+            <tr>
+                <td>101</td>
+                <td>Ananya</td>
+                <td>MCA</td>
+                <td>A+</td>
+            </tr>
+
+            <tr>
+                <td>102</td>
+                <td>Dinesh</td>
+                <td>BCA</td>
+                <td>A</td>
+            </tr>
+
+            <tr>
+                <td>103</td>
+                <td>Priya</td>
+                <td>B.Tech</td>
+                <td>B+</td>
+            </tr>
+
+            <tr>
+                <td>104</td>
+                <td>Aman</td>
+                <td>MCA</td>
+                <td>A+</td>
+            </tr>
+
+        </table>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
